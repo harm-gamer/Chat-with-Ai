@@ -65,22 +65,22 @@
 // });
 
 // console.log(chatCompletion.choices[0].message);
-import { OpenAI } from "openai";
-import dotenv from "dotenv";
-dotenv.config();
-const client = new OpenAI({
-    baseURL: "https://router.huggingface.co/v1",
-    apiKey: process.env.HF_TOKEN,
-});
+// import { OpenAI } from "openai";
+// import dotenv from "dotenv";
+// dotenv.config();
+// const client = new OpenAI({
+//     baseURL: "https://router.huggingface.co/v1",
+//     apiKey: process.env.HF_TOKEN,
+// });
 
- const chatCompletion = await client.chat.completions.create({
-	model: "openai/gpt-oss-120b:together",
-    messages: [
-        {
-            role: "user",
-            content: "TypeError: Cannot read property 'x' of undefined",
-        },
-    ],
-});
+//  const chatCompletion = await client.chat.completions.create({
+// 	model: "openai/gpt-oss-120b:together",
+//     messages: [
+//         {
+//             role: "user",
+//             content: "TypeError: Cannot read property 'x' of undefined",
+//         },
+//     ],
+// });
 
-console.log(chatCompletion.choices[0].message);
+// console.log(chatCompletion.choices[0].message);
